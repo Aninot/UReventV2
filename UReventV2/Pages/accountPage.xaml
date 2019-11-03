@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="UReventV2.Pages.accountPage">
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0">
+                <Label HorizontalOptions="CenterAndExpand" Text="Style"/>
+                <ScrollView>
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center"
+                                   HorizontalOptions="Start"
+                                   WidthRequest="100"
+                                   Margin="10"
+                                   Text="Rock"/>
+                            <CheckBox HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center"
+                                   WidthRequest="100"
+                                   Margin="10"
+                                   Text="Pop"/>
+                            <CheckBox HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center"
+                                   WidthRequest="100"
+                                   Margin="10"
+                                   Text="Electro"/>
+                            <CheckBox HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center"
+                                   WidthRequest="100"
+                                   Margin="10"
+                                   Text="Hip-Hop"/>
+                            <CheckBox HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center"
+                                   WidthRequest="100"
+                                   Margin="10"
+                                   Text="Country"/>
+                            <CheckBox HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center"
+                                   WidthRequest="100"
+                                   Margin="10"
+                                   Text="Jazz"/>
+                            <CheckBox HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center"
+                                   WidthRequest="100"
+                                   Margin="10"
+                                   Text="RnB"/>
+                            <CheckBox HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center"
+                                   WidthRequest="100"
+                                   Margin="10"
+                                   Text="Classique"/>
+                            <CheckBox HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label VerticalTextAlignment="Center"
+                                   WidthRequest="100"
+                                   Margin="10"
+                                   Text="Slam"/>
+                            <CheckBox HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout Grid.Column="1">
+                <Label HorizontalTextAlignment="Center" Text="Coût"/>
+                <StackLayout>
+                    <Slider Minimum="0" Maximum="100"/>
+                    <Label VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Text="coucou"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="UReventV2.Pages.createEvent">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <Entry Placeholder="Nom de votre soirée" Margin="10" HorizontalTextAlignment="Center"/>
+        <Entry Placeholder="Description" Margin="10" HorizontalTextAlignment="Center"/>
+        <StackLayout Orientation="Horizontal" Margin="10">
+            <Picker ItemsSource="styles" Title="Thème de la soirée"/>
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" WidthRequest="1000">
+                <Label Text="Prix d'entrée" HorizontalTextAlignment="Center"/>
+                <Slider Minimum="0" Maximum="100"/>
+            </StackLayout>
+        </StackLayout>
+        <Entry Placeholder="Adresse" Margin="10" HorizontalTextAlignment="Center"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+            <Label Text="Date de début :" WidthRequest="100" VerticalTextAlignment="Center"/>
+            <DatePicker Margin="10"/>
+            <Entry Placeholder="Heure" Margin="10" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+            <Label Text="Date de fin :" WidthRequest="100" VerticalTextAlignment="Center"/>
+            <DatePicker Margin="10"/>
+            <Entry Placeholder="Heure" Margin="10" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        <Label Margin="10" HorizontalOptions="Center" Text="Participation"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+            </Grid.RowDefinitions>
+            <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+                <Label WidthRequest="100" VerticalOptions="Center" Text="Miam (Salé)"/>
+                <CheckBox/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="1" Orientation="Horizontal">
+                <Label WidthRequest="100" VerticalOptions="Center" Text="Miam (Sucré)"/>
+                <CheckBox/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
+                <Label WidthRequest="50" VerticalOptions="Center" Text="Alcool"/>
+                <CheckBox/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+                <Label WidthRequest="50" VerticalOptions="Center" Text="Soft"/>
+                <CheckBox/>
+            </StackLayout>
+        </Grid>
+        <StackLayout VerticalOptions="EndAndExpand">
+            <Button Text="Créer l'évènement"/>
+        </StackLayout>
+    </StackLayout>
+</ContentView>
